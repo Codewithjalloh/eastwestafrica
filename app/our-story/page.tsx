@@ -141,7 +141,7 @@ export default function Page() {
 <div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMS8j3jH9kH0dAoSap2OS4Q2Xsu0_BDY_gygXbNLVMhxCohXtFf3jZM6YXpagCiuQmAxHXfe6fb-5iAlWSIkbvC5UYj1VproQDBsTb2Cg1Z2lnzeyemlzziMQg48_KSFvcj1sDjZ457JsIZftJb79YCTIyaaCzffq5xbr7ZlWDyo5uWXOd_Fp7gLZhqtygSc0Ogg6VAx2SbQhH0mRB0GAyVfm_EPN1OdkMz-6S9M-hQG927yLvsiZPbDHHrjn625Yt7Y9wThFgwrn" />
 </div>
-<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Dr. Aris Gakwaya</h4>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Coming soon</h4>
 <p className="font-label-caps text-label-caps text-secondary mb-4">CHIEF EXECUTIVE OFFICER</p>
 <p className="font-body-md text-body-md text-on-surface-variant">Former advisor to regional development banks with 20 years of experience in African macro-economics.</p>
 </div>
@@ -150,7 +150,7 @@ export default function Page() {
 <div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnjVMhHIGRExAGfqvpesltAnLhicZOPNjLf3wJMRQuUqeQlCYwKl7YuVP0TZ4tQvqDzQNvqgym_OBzbcLIuA2B_-5YnOM-6yrycm20N-jqSkfcAUrGg5UDdyhgjB9Ow2RKDsQ5wJmzOCvSJbqrkbx5UKwlzf7rZtOvzXdF3E75_DWzjlNkwlJjrmfu2GkXT8P6R8tg9NQncXEx-vzpn0vlQku3ClC5GRJKUFy2T6uICZR7Wc-XmPh92q2pYBh4qrmh9iPFn_a4Jjh" />
 </div>
-<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Mariama Diallo</h4>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Coming soon</h4>
 <p className="font-label-caps text-label-caps text-secondary mb-4">MANAGING DIRECTOR, CONAKRY</p>
 <p className="font-body-md text-body-md text-on-surface-variant">Expert in mineral economics and public-private partnerships across the West African region.</p>
 </div>
@@ -159,7 +159,7 @@ export default function Page() {
 <div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
 <img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrYKxETl9vY2XIVVm6RqChsYp31_o5HCsNmCq-81VPBn1JnW_gSR48q95ZhngdZNDRpt3Wvge4qS-Uu1xvyvtIO2rORTt4EqiuPOqENIBtAT0ED1_5UeQfl7It_AM5DyNyPZYgmsC0dlm9d9GmfNyhcUbLvRRpJDXhNjMB3Bp_Ky14LB1x4MFhj9YquOHPKXR35hD8oQzbWY3fFV8e9MfsvgYSFlhQS3YghZx8__v8ZsGckNOTM2xfeiRGuBklM6Ri5F0R9KN8ZQKM" />
 </div>
-<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Jean-Paul Ndoli</h4>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Coming soon</h4>
 <p className="font-label-caps text-label-caps text-secondary mb-4">HEAD OF INVESTMENT ADVISORY</p>
 <p className="font-body-md text-body-md text-on-surface-variant">Leading the capital markets division with a focus on cross-border trade finance and infrastructure debt.</p>
 </div>
