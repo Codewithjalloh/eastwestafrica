@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-container": "#76849f",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#e9c176",
+                    "primary-fixed": "#d6e3ff",
+                    "inverse-surface": "#2e3132",
+                    "outline-variant": "#c5c6cd",
+                    "on-tertiary-container": "#349557",
+                    "surface-container-low": "#f3f4f5",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#005228",
+                    "surface-dim": "#d9dadb",
+                    "tertiary-fixed-dim": "#7ada95",
+                    "primary": "#000000",
+                    "on-secondary-container": "#785a1a",
+                    "on-primary-fixed": "#0d1c32",
+                    "primary-container": "#0d1c32",
+                    "surface": "#f8f9fa",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed": "#96f7af",
+                    "on-primary-fixed-variant": "#39475f",
+                    "surface-container": "#edeeef",
+                    "surface-tint": "#515f78",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#b9c7e4",
+                    "surface-container-lowest": "#ffffff",
+                    "outline": "#75777e",
+                    "inverse-on-surface": "#f0f1f2",
+                    "on-background": "#191c1d",
+                    "on-surface-variant": "#44474d",
+                    "surface-bright": "#f8f9fa",
+                    "on-secondary-fixed-variant": "#5d4201",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e7e8e9",
+                    "on-error-container": "#93000a",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "on-tertiary-fixed": "#00210c",
+                    "secondary-container": "#fed488",
+                    "on-secondary-fixed": "#261900",
+                    "surface-variant": "#e1e3e4",
+                    "tertiary": "#000000",
+                    "secondary": "#775a19",
+                    "on-surface": "#191c1d",
+                    "secondary-fixed": "#ffdea5",
+                    "background": "#f8f9fa",
+                    "tertiary-container": "#00210c",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-padding": "80px",
+                    "gutter": "24px",
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "margin-mobile": "20px",
+                    "margin-desktop": "64px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "label-caps": ["Inter"],
+                    "headline-md": ["Source Serif 4"],
+                    "data-tabular": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Source Serif 4"],
+                    "headline-sm": ["Source Serif 4"],
+                    "display-lg-mobile": ["Source Serif 4"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                    "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary docked full-width top-0 z-50 sticky">
+<nav class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-stack-lg">
+<span class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</span>
+<div class="hidden md:flex items-center gap-stack-md">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Opportunities</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Insights</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1 transition-colors duration-200" href="#">Events</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Sectors</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a>
+</div>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="hidden lg:flex items-center gap-2 px-4 py-2 border border-outline rounded-lg font-label-caps text-label-caps text-on-surface-variant hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[20px]">search</span>
+                    Search
+                </button>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">Login</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-label-caps hover:opacity-80 transition-opacity">Contact Us</button>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-section-padding space-y-section-padding">
+<!-- Featured Event Section -->
+<section class="relative h-[600px] rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent z-10"></div>
+<img alt="Featured Event" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A grand executive investment summit hall in Kigali with floor-to-ceiling windows overlooking a modern skyline. The space is filled with business leaders in formal attire engaged in high-level networking. Soft morning sunlight filters through the room, creating a prestigious and professional atmosphere consistent with a global financial institution. The color palette is dominated by deep navy blues and clean whites with golden accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDafVxkN8i-VaN8ayy4CIyBn4V7NgvrF2_ipAaudf_E5F1TwTWmIPpwiKSsNZL15DDeIvJoDuAg2pOqaHm9oFSjIp9g3Bj8pKiHRDUvFuvsXugblt3OMwQAd55ff89jUkgsVWeQ-kJZ8CDc15BdMmpdUlnjQxCTK7CP5j5r3CmZ0MzfwGb9CL96GfcY0YyvotRUs2oDtYDiubRSq9-gg1YSIJD1B9awJJi5IFUc_Bbv3-qIGPuZxXQiVygK8jOqykkOdGF9JjdJvmLv"/>
+<div class="relative z-20 h-full flex flex-col justify-center px-12 max-w-2xl text-on-primary">
+<span class="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps mb-4">Flagship Event</span>
+<h1 class="font-display-lg text-display-lg mb-6">East-West Investment Summit 2024</h1>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">Join over 500 global investors and African policymakers in Kigali for the definitive forum on transcontinental economic infrastructure.</p>
+<div class="flex items-center gap-8 mb-10 text-on-primary/80">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="font-data-tabular text-data-tabular">October 14-16, 2024</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-data-tabular text-data-tabular">Kigali Convention Centre</span>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-3 rounded-lg font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors">Register Now</button>
+<button class="border border-on-primary text-on-primary px-8 py-3 rounded-lg font-label-caps text-label-caps hover:bg-on-primary/10 transition-colors">Download Agenda</button>
+</div>
+</div>
+</section>
+<!-- Filters & Search -->
+<section class="flex flex-col md:flex-row justify-between items-end gap-gutter border-b border-outline-variant pb-8">
+<div class="space-y-stack-sm w-full md:w-auto">
+<h2 class="font-headline-sm text-headline-sm">Upcoming Opportunities</h2>
+<div class="flex flex-wrap gap-stack-md">
+<button class="bg-primary text-on-primary px-4 py-1.5 rounded-full font-label-caps text-label-caps">All Events</button>
+<button class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-caps text-label-caps hover:bg-surface-variant">Business Forums</button>
+<button class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-caps text-label-caps hover:bg-surface-variant">Webinars</button>
+<button class="bg-surface-container text-on-surface-variant px-4 py-1.5 rounded-full font-label-caps text-label-caps hover:bg-surface-variant">Trade Missions</button>
+</div>
+</div>
+<div class="flex gap-stack-md w-full md:w-auto">
+<div class="relative flex-grow">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full md:w-64 pl-10 pr-4 py-2 bg-surface-container-lowest border border-outline-variant rounded-lg focus:ring-1 focus:ring-primary focus:border-primary outline-none font-body-md" placeholder="Search by city or keyword..." type="text"/>
+</div>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-high border border-outline-variant rounded-lg font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+                    Location
+                </button>
+</div>
+</section>
+<!-- Chronological Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Event Card 1 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 relative">
+<img alt="Guinea-Rwanda Trade Dialogue" class="w-full h-full object-cover" data-alt="A professional boardroom meeting in Conakry with high-end furniture and diverse business executives focused on a presentation. The room is modern with sleek lines, representing progress and economic stability. The lighting is bright and professional, utilizing a color palette of corporate blues and greys, matching the modern African business aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtYjJS6PQWHoink3WzjPxGfPaBd_hZ8RhHtT-sFl7ng72G_cOtzQTJlBttp91-2JcM0IyxkME0RMGQ2uuxWGjnmah6_5XFUK2Rvf9Jo5Vy7yjwpDxJHXpmBfk4P9MfctMqCrH-58dQl5lJxq6XnAS1ObX7kP5VC3uV0nE_hdcx-BzgJDgNFtvbsCSXfQS5jqB2hXZGtiVXsEi5-VjwmiokNpWPuX-VZHALaCujfWNCE8LIGfObAVQA-OYc9sbiQtGuY9lGBGTuDcMm"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur px-3 py-1 rounded text-center">
+<span class="block font-bold text-headline-sm leading-tight">12</span>
+<span class="block font-label-caps text-[10px] uppercase">Nov</span>
+</div>
+</div>
+<div class="p-6 space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-secondary">Business Forum</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-data-tabular text-[12px]">Conakry, Guinea</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Guinea-Rwanda Trade Dialogue</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-2">Exploration of bilateral trade agreements and logistics corridors for mining equipment and services.</p>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant">
+<span class="font-data-tabular text-data-tabular">Seats remaining: 14</span>
+<button class="text-primary font-label-caps text-label-caps hover:underline">Register Now</button>
+</div>
+</div>
+</article>
+<!-- Event Card 2 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 relative">
+<img alt="Pan-African Fintech Outlook" class="w-full h-full object-cover" data-alt="A group of corporate professionals engaging in a networking session within a luxury glass-walled atrium. The scene is bright and airy, with a focus on human interaction and exclusive business connections. The visual style is premium and corporate, using high-key lighting and a palette of crisp whites and primary navy blues." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp9ZvSTCvM9Nx-ZH9AmlXKMQNPcW4-vuSidSUR3YbOPt6ol6MbOmKzUwhdIAP45qPJtsPPHGzkNWH82-fgVnDdHjrECIttvWUyj1QgkUxsyZrrWkKC7OH9jMqn7r4C33xlSWKXkWMVNhVIUUMHIhkpcH6qJ8O31xEF32hdVtDvQZu2qxabZMoL0ZBs0MeIS8oqBO0mbf4Nssx5nJam5_zj3Jny5Ixgr4HkD2qbhJVj_evCnHYK6WUKsZXyRSO4-qR1B7kDxpuhvjbK"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur px-3 py-1 rounded text-center">
+<span class="block font-bold text-headline-sm leading-tight">05</span>
+<span class="block font-label-caps text-[10px] uppercase">Dec</span>
+</div>
+</div>
+<div class="p-6 space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-on-tertiary-container">Webinar</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">videocam</span>
+<span class="font-data-tabular text-[12px]">Virtual Session</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Pan-African Fintech Outlook</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-2">Expert panel discussion on cross-border payment regulations and digital asset management in Sub-Saharan Africa.</p>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant">
+<span class="font-data-tabular text-data-tabular">Free Admission</span>
+<button class="text-primary font-label-caps text-label-caps hover:underline">Register Now</button>
+</div>
+</div>
+</article>
+<!-- Event Card 3 -->
+<article class="bg-surface-container-lowest border border-outline-variant rounded-xl overflow-hidden hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 relative">
+<img alt="Logistics &amp; Infrastructure Tour" class="w-full h-full object-cover" data-alt="A clean, modern industrial park landscape in Kigali during blue hour. The image emphasizes infrastructure growth and urban development with sharp architectural lines and glowing building lights. The atmosphere is optimistic and professional, adhering to a sophisticated editorial photography style with deep primary tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEQYrUv5EE76oN9l8wIlGkoTlQWGsG2jLLTslZKySk7at9ganpJ8P1FsU2dfNK33SwnHy96WGO8RN3g48U6taK04eLnOKZGNBnhdYtFlBv0nbTdo7A0kgu_xBwWJDvrFHZUSuoQGffB18P8y4bdaet-JgBwZvllbUGcU34_2jebJiWl-iCqAUcTnsDVxGXFcG1wKiv9OTKvEyscbKRUh1Y2EPsAp4WzT2WDgt1LNjfDfrWlBprCEEpQAPGWMrDWenzQ-I94ytShFra"/>
+<div class="absolute top-4 left-4 bg-surface-container-lowest/90 backdrop-blur px-3 py-1 rounded text-center">
+<span class="block font-bold text-headline-sm leading-tight">22</span>
+<span class="block font-label-caps text-[10px] uppercase">Jan</span>
+</div>
+</div>
+<div class="p-6 space-y-4">
+<div class="flex justify-between items-start">
+<span class="font-label-caps text-label-caps text-secondary">Trade Mission</span>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-data-tabular text-[12px]">Kigali, Rwanda</span>
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm">Logistics &amp; Infrastructure Tour</h3>
+<p class="text-on-surface-variant font-body-md line-clamp-2">A guided mission through Rwanda's key special economic zones and the Bugesera Airport construction site.</p>
+<div class="pt-4 flex items-center justify-between border-t border-outline-variant">
+<span class="font-data-tabular text-data-tabular">Delegation: 25 max</span>
+<button class="text-primary font-label-caps text-label-caps hover:underline">Inquire</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Past Highlights Gallery -->
+<section class="space-y-stack-lg">
+<div class="flex justify-between items-center">
+<h2 class="font-headline-md text-headline-md">Past Highlights</h2>
+<button class="flex items-center gap-2 text-primary font-label-caps text-label-caps group">
+                    View Full Archive
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+<div class="bento-grid h-[500px]">
+<div class="col-span-12 md:col-span-8 relative rounded-xl overflow-hidden group">
+<img alt="Highlight 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A high-angle shot of a keynote speaker addressing a packed auditorium at a major economic forum. The lighting is dramatic and focused on the stage, highlighting the prestige of the event. The audience consists of diverse global leaders. The style is that of a premium news publication like Bloomberg, emphasizing authority and significance through a sophisticated color palette of navy, gold, and white." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARJtpL2oBTBnwBuOCSiyE9YIYewKGD4KTX5_1LSesOohnOjwWUHcVA-xl8OaV83yvZSqqMhFWUlIezlEfuRQLtMUkk1tQW9e92OhzfAarPunTplJPN2F2cwNV-_PJUR2rqzxmJ1cGWDPDlpJIofcmz5jKdVeumfnInd1BLwFRqNhYdXuoQiVDPmc4TovG2TPvsBUX5o9H1AxzUUkhheDADZ923ibzKugCJOwIbbJoNKijtyofPFoOEM4w5Rc1YOvg2MDhMfV5hGqaR"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-8">
+<div>
+<h4 class="text-on-primary font-headline-sm mb-2">East-West Energy Forum 2023</h4>
+<p class="text-on-primary/70 font-body-md">Conakry, Guinea • 1,200+ Attendees</p>
+</div>
+</div>
+</div>
+<div class="col-span-6 md:col-span-4 relative rounded-xl overflow-hidden group">
+<img alt="Highlight 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A candid photo of two business executives in tailored suits shaking hands in a modern, sunlit lobby. The background shows blurred architectural details and greenery, suggesting a high-end corporate environment. The lighting is natural and bright, conveying warmth and professional success in a modern African context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJM9ry_iFkMZlldXjp6WJDeioyW-T8hjuzxIGAbAaTSZUsop3b8ImUC7NBtiWIuv03Sau5ryVSJ98eOi6KnYnpq_i8yblwPMYJk5yL666f-ZT3cKm_QuJWBRmm6JaGp-RFnnZnNji1QaD1PLHk-zZQR8rULdO2OjLjnAC_QzitDOdaOjd-seAPTdLUhHFEeIZvs20KdyVu_1M0zL5pwo_WzMQ5SHfYWH0OnHJuksrNjzTR956tnv70akYzyUnRVcVomq1K9Rwpwx8G"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<p class="text-on-primary font-body-md font-bold">VIP Networking Gala</p>
+</div>
+</div>
+<div class="hidden md:block md:col-span-4 relative rounded-xl overflow-hidden group">
+<img alt="Highlight 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A wide shot of a modern, white-tiled conference hall filled with rows of professionals. The room is brightly lit with large screens displaying economic data. The aesthetic is extremely clean and organized, reinforcing the image of EastWest Africa as a reliable and data-driven organization. The palette is dominated by light greys and pure whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmNl4yfIVvOsvOgD8Y8C4CM8vmhf2WhAH31fp8tdnNWEP_uN9n3O7r83KsNMTJtNzY3E94fpckQEwvWp6vm7JuUj49KvxeEwC5nnp0DXObqDEAqXFPshn1N4_ZjAELmxHSBUEgRALovAjMn029mXZOuFy62M1TdrFAlB-VIS8KxJID-cwWD1emPa7iDc3nfUBO5PnjRUzvuZWHidQ9vsM_-t1bRxdYInLip08a8VWP7HEsxWF3TLEmA-LYa9S4uP_GEHqyf0eGTGks"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<p class="text-on-primary font-body-md font-bold">Tech Innovators Summit</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter CTA -->
+<section class="bg-primary-container rounded-2xl p-12 text-center space-y-stack-md">
+<h2 class="font-display-lg text-display-lg text-on-primary">Stay Informed on Upcoming Missions</h2>
+<p class="text-on-primary-container font-body-lg max-w-2xl mx-auto">Get exclusive invitations to trade missions and private business forums directly in your inbox.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto pt-4">
+<input class="flex-grow bg-surface-container-highest border-none rounded-lg px-6 py-3 text-on-surface focus:ring-2 focus:ring-secondary-fixed outline-none" placeholder="Professional email address" type="email"/>
+<button class="bg-secondary-fixed text-on-secondary-fixed px-8 py-3 rounded-lg font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors whitespace-nowrap" type="submit">Subscribe</button>
+</form>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div class="space-y-stack-md">
+<span class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</span>
+<p class="font-body-md text-on-surface-variant dark:text-on-primary-container">Connecting Rwanda &amp; Guinea through strategic investment and operational excellence.</p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed">Network</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Opportunities</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Sectors</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Insights</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed">Company</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">About Us</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Support</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-on-surface dark:text-on-primary-fixed">Legal</h4>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Investment Framework</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletter</a>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto">
+<p class="font-body-md text-center md:text-left text-on-surface-variant dark:text-on-primary-container">© 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.</p>
+</div>
+</footer>
+</body></html>

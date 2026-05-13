@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#76849f",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#e9c176",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-surface": "#2e3132",
+                        "outline-variant": "#c5c6cd",
+                        "on-tertiary-container": "#349557",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005228",
+                        "surface-dim": "#d9dadb",
+                        "tertiary-fixed-dim": "#7ada95",
+                        "primary": "#000000",
+                        "on-secondary-container": "#785a1a",
+                        "on-primary-fixed": "#0d1c32",
+                        "primary-container": "#0d1c32",
+                        "surface": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#96f7af",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-container": "#edeeef",
+                        "surface-tint": "#515f78",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b9c7e4",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#75777e",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "on-surface-variant": "#44474d",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e7e8e9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-tertiary-fixed": "#00210c",
+                        "secondary-container": "#fed488",
+                        "on-secondary-fixed": "#261900",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary": "#000000",
+                        "secondary": "#775a19",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#ffdea5",
+                        "background": "#f8f9fa",
+                        "tertiary-container": "#00210c",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-padding": "80px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Source Serif 4"],
+                        "data-tabular": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Source Serif 4"],
+                        "headline-sm": ["Source Serif 4"],
+                        "display-lg-mobile": ["Source Serif 4"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                        "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar (Shared Component) -->
+<header class="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">
+                EastWest Africa
+            </div>
+<nav class="hidden lg:flex items-center space-x-stack-lg">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Opportunities</a>
+<a class="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1" href="#">Insights</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Events</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Sectors</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a>
+</nav>
+<div class="flex items-center space-x-stack-md">
+<div class="relative hidden md:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant rounded-lg text-body-md focus:outline-none focus:ring-1 focus:ring-primary w-64" placeholder="Search insights..." type="text"/>
+</div>
+<button class="px-5 py-2 rounded-lg bg-primary text-on-primary font-label-caps hover:opacity-80 transition-opacity">Contact Us</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-desktop py-12">
+<!-- Featured Lead Story Section -->
+<section class="mb-section-padding">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<div class="lg:col-span-8 group cursor-pointer">
+<div class="relative overflow-hidden rounded-xl mb-stack-md aspect-[16/9]">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A cinematic wide shot of a modern glass skyscraper reflecting a vibrant sunrise over a bustling African harbor with cargo ships. The lighting is golden and high-contrast, creating an atmosphere of professional optimism and economic momentum. The architectural details are sharp, embodying a prestigious modern corporate aesthetic with deep blues and warm amber tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7XF_wJFXG20fJB8i9pTXwNMinxcyo8m_nTpY_PCCJ00yE5etNYm1uYSOAewQk6_hcpJ1P_Gv9wsQg5b-hLcxDsQT5alRnGRsuhvXGUcKvweNPWHOTuN8Ql8rqADOouGewfctsiQXGtQl1Wy-rc1Yu1JkSAHoet7ClSqUYxv4Ag4SQI3By3wDaIsGYFNXCgtDnPfxnnLtmLvBH_5ff0Ds0e6vWNwlaWm9deankIWzK5kkqqqlxC7K68e3Qt7Oa1aTAJUXx24ibXu5e"/>
+<div class="absolute top-4 left-4">
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded font-label-caps uppercase">Economic Reports</span>
+</div>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary mb-2 uppercase tracking-widest">Featured Analysis • 12 MIN READ</p>
+<h1 class="font-display-lg text-display-lg mb-4 leading-tight hover:text-secondary transition-colors">The Rwanda-Guinea Corridor: A New Blueprint for Intra-African Trade Dynamics</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 line-clamp-3">An in-depth examination of the logistical and regulatory framework connecting East and West Africa. As Kigali and Conakry strengthen bilateral ties, we analyze the emerging investment opportunities in infrastructure and digital banking services.</p>
+<div class="flex items-center space-x-stack-sm text-on-surface-variant">
+<span class="font-label-caps text-label-caps font-bold text-primary">Dr. Amara Kouyaté</span>
+<span class="text-outline">•</span>
+<span class="font-label-caps text-label-caps">October 24, 2024</span>
+</div>
+</div>
+</div>
+<!-- Secondary Stories Sidebar -->
+<div class="lg:col-span-4 flex flex-col space-y-8 divide-y divide-outline-variant">
+<div class="group cursor-pointer">
+<span class="font-label-caps text-label-caps text-on-tertiary-container mb-2 block uppercase">Market Updates</span>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">Kigali Stock Exchange Sees Record Tech Listings</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Fintech startups lead a new wave of IPOs as regulatory hurdles decrease across the EAC block.</p>
+</div>
+<div class="group pt-8 cursor-pointer">
+<span class="font-label-caps text-label-caps text-on-tertiary-container mb-2 block uppercase">Policy Analysis</span>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">Guinea Mining Reforms: Implications for Sovereign Wealth</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">The new bauxite extraction framework promises higher local equity but raises concerns for long-term partners.</p>
+</div>
+<div class="group pt-8 cursor-pointer">
+<span class="font-label-caps text-label-caps text-on-tertiary-container mb-2 block uppercase">Success Stories</span>
+<h3 class="font-headline-sm text-headline-sm mb-2 group-hover:text-secondary transition-colors">EcoBuild Rwanda: Navigating the Middle-Income Housing Boom</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">How one construction firm scaled from local projects to regional enterprise using institutional capital.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter & Archive Bento Grid Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-padding">
+<!-- Market Updates Bento Card -->
+<div class="md:col-span-8 bg-surface-container-low border border-outline-variant p-8 rounded-xl">
+<div class="flex justify-between items-center mb-8">
+<h2 class="font-headline-md text-headline-md">Latest Intelligence</h2>
+<a class="text-primary font-label-caps border-b border-primary pb-1 hover:text-secondary hover:border-secondary transition-colors" href="#">View All Archive</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-stack-lg">
+<div class="space-y-4">
+<div class="aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A clean, minimalist data dashboard on a tablet screen showing green growth charts and financial indicators. The setting is a bright, high-end executive office with soft ambient lighting and a professional corporate palette. The visual style is modern, data-driven, and evokes a sense of clarity and institutional precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAMbwp39MgDFZf-hm0KVFwMrsZmTcZULGukxlz6NthxHXGYI8zehJuUTCuWoJGLvV56AhYl14hhrzWyH_SNNXjvSVyYyTmyRzEjEFm3fUGCWBcUMLvrMg3syBFx-S8R_PfVVO_9Sw4p-YB1-ahzuAIdXNM3O1FYDAomuV5ZHAVPVDqqy97ESzuXkuQeoVd2stwhWhZ9s0TgcY9HSICK6W3mYTK7hy5mkLNXdkoih6uNgx7bs86I7CyefvK0JryEXhKCdhftsGiNHr6"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm leading-snug">Quarterly GDP Growth: EAC vs ECOWAS Analysis</h4>
+<p class="text-on-surface-variant text-body-md">A comparative study of recovery speeds post-global supply chain disruptions.</p>
+</div>
+<div class="space-y-4">
+<div class="aspect-[4/3] rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up of high-quality financial newspapers and reports stacked on a dark wooden table in a sophisticated library. Soft warm lighting illuminates the text, creating a feeling of deep research and historical significance. The color palette is rich with deep navies, creams, and mahogany tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtgBHDoUDCHuuBptoGpKEO2yfUMcM1HrxA6zqaOA4lPYgpKueZ5_HnqTvJRVuuA3TYAKMsGNl-Yt776WxT37isbJULd2GVKCj6aHnKxh8Z7HNJuw4dKVwVQC2Fba-LeZXBwGDAnIZhA3KNmT-CG34MUeVQAgFYmIXe21MHppcOHadPK1-2rD6AQhrknydQk_cG12n_5OX6kuTjfAHALa9rUCyac26I6SP5gxTNIqfVDJm1ZTh_RbE4FLAcxn5qKI4bM0V8Rad0ae1M"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm leading-snug">The Digital Franc: Future of Regional Currency</h4>
+<p class="text-on-surface-variant text-body-md">Central banks explore blockchain for cross-border settlement between East and West.</p>
+</div>
+</div>
+</div>
+<!-- Newsletter Subscription Card -->
+<div class="md:col-span-4 bg-primary-container text-on-primary-fixed p-8 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-6">mail</span>
+<h2 class="font-headline-md text-headline-md text-on-primary mb-4">The EastWest Briefing</h2>
+<p class="text-on-primary-container font-body-md mb-8">Get exclusive insights, deal flows, and policy summaries delivered to your inbox every Monday morning.</p>
+</div>
+<form class="space-y-4">
+<div>
+<label class="font-label-caps text-on-primary-container block mb-2">WORK EMAIL</label>
+<input class="w-full bg-on-primary-fixed-variant border-none rounded-lg p-3 text-on-primary placeholder:text-on-primary-container focus:ring-1 focus:ring-secondary-container" placeholder="executive@company.com" type="email"/>
+</div>
+<button class="w-full py-4 bg-secondary-container text-on-secondary-fixed font-label-caps rounded-lg hover:bg-secondary-fixed-dim transition-colors">Subscribe to Insights</button>
+<p class="text-[10px] text-center text-on-primary-container">By subscribing, you agree to our Investment Framework and Privacy Policy.</p>
+</form>
+</div>
+</section>
+<!-- Thematic Sections (Grid) -->
+<section class="border-t border-outline-variant pt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Sector: Logistics -->
+<div class="space-y-6">
+<h3 class="font-label-caps text-label-caps border-l-4 border-secondary pl-3 uppercase">Supply Chain &amp; Logistics</h3>
+<ul class="space-y-8">
+<li class="group cursor-pointer">
+<h5 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors mb-2">Conakry Port Expansion: Phase 2 Funding Secured</h5>
+<p class="text-on-surface-variant text-body-md">Bilateral investment group confirms $450M for deep-water berth expansion.</p>
+</li>
+<li class="group cursor-pointer">
+<h5 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors mb-2">Air Freight Hubs: Rwanda's Strategic Pivot</h5>
+<p class="text-on-surface-variant text-body-md">How the new Bugesera Airport will serve as a continental crossroads.</p>
+</li>
+</ul>
+</div>
+<!-- Sector: Fintech -->
+<div class="space-y-6">
+<h3 class="font-label-caps text-label-caps border-l-4 border-on-tertiary-container pl-3 uppercase">Fintech &amp; Digital Economy</h3>
+<ul class="space-y-8">
+<li class="group cursor-pointer">
+<h5 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors mb-2">Mobile Money Interoperability reaches 92%</h5>
+<p class="text-on-surface-variant text-body-md">New protocols allow seamless transfers between Rwanda and Guinean providers.</p>
+</li>
+<li class="group cursor-pointer">
+<h5 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors mb-2">Cybersecurity Frameworks for Regional Banks</h5>
+<p class="text-on-surface-variant text-body-md">The essential guide for institutional security in the digital age.</p>
+</li>
+</ul>
+</div>
+<!-- Sector: Agriculture -->
+<div class="space-y-6">
+<h3 class="font-label-caps text-label-caps border-l-4 border-primary pl-3 uppercase">Agri-Business &amp; Trade</h3>
+<ul class="space-y-8">
+<li class="group cursor-pointer">
+<h5 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors mb-2">Coffee Export Boom: Quality Over Quantity</h5>
+<p class="text-on-surface-variant text-body-md">Specialty beans from Rwanda find a growing market in West African urban centers.</p>
+</li>
+<li class="group cursor-pointer">
+<h5 class="font-headline-sm text-headline-sm group-hover:text-secondary transition-colors mb-2">Sustainable Fertilizer Initiatives in Guinea</h5>
+<p class="text-on-surface-variant text-body-md">Local production plants reduce reliance on erratic international imports.</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed mb-4">
+                    EastWest Africa
+                </div>
+<p class="text-on-surface-variant dark:text-on-primary-container font-body-md mb-6">
+                    The bridge for strategic investment and economic synergy between the EAC and West African markets.
+                </p>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-4 uppercase">Ecosystem</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Opportunities</a>
+<a class="text-secondary dark:text-secondary-fixed font-semibold" href="#">Insights</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Sectors</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Investment Framework</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-4 uppercase">Company</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">About</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Events</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+</nav>
+</div>
+<div>
+<h4 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-4 uppercase">Connect</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact Support</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Newsletter</a>
+<div class="flex space-x-4 mt-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">public</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-colors">mail</span>
+</div>
+</nav>
+</div>
+</div>
+<div class="px-margin-desktop py-8 max-w-container-max mx-auto border-t border-outline-variant dark:border-primary-fixed-dim/20">
+<p class="text-on-surface-variant dark:text-on-primary-container text-body-md text-center">
+                © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
+            </p>
+</div>
+</footer>
+</body></html>

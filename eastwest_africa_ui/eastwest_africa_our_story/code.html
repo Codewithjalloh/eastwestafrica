@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | EastWest Africa</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#76849f",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed-dim": "#e9c176",
+                        "primary-fixed": "#d6e3ff",
+                        "inverse-surface": "#2e3132",
+                        "outline-variant": "#c5c6cd",
+                        "on-tertiary-container": "#349557",
+                        "surface-container-low": "#f3f4f5",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#005228",
+                        "surface-dim": "#d9dadb",
+                        "tertiary-fixed-dim": "#7ada95",
+                        "primary": "#000000",
+                        "on-secondary-container": "#785a1a",
+                        "on-primary-fixed": "#0d1c32",
+                        "primary-container": "#0d1c32",
+                        "surface": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#96f7af",
+                        "on-primary-fixed-variant": "#39475f",
+                        "surface-container": "#edeeef",
+                        "surface-tint": "#515f78",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#b9c7e4",
+                        "surface-container-lowest": "#ffffff",
+                        "outline": "#75777e",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "on-surface-variant": "#44474d",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e7e8e9",
+                        "on-error-container": "#93000a",
+                        "primary-fixed-dim": "#b9c7e4",
+                        "on-tertiary-fixed": "#00210c",
+                        "secondary-container": "#fed488",
+                        "on-secondary-fixed": "#261900",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary": "#000000",
+                        "secondary": "#775a19",
+                        "on-surface": "#191c1d",
+                        "secondary-fixed": "#ffdea5",
+                        "background": "#f8f9fa",
+                        "tertiary-container": "#00210c",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "section-padding": "80px",
+                        "gutter": "24px",
+                        "stack-lg": "32px",
+                        "stack-sm": "8px",
+                        "stack-md": "16px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "container-max": "1280px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Inter"],
+                        "headline-md": ["Source Serif 4"],
+                        "data-tabular": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg": ["Source Serif 4"],
+                        "headline-sm": ["Source Serif 4"],
+                        "display-lg-mobile": ["Source Serif 4"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                        "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .executive-gradient {
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(13,28,50,0.05) 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md">
+<!-- TopNavBar -->
+<nav class="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Opportunities</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Insights</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Events</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Sectors</a>
+<a class="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1" href="#">About</a>
+</div>
+<div class="flex items-center gap-stack-md">
+<button class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container px-4 py-2 hover:text-primary transition-colors">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-body-md text-body-md hover:bg-opacity-90 transition-opacity">Contact Us</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero: Storytelling Canvas -->
+<section class="relative py-section-padding bg-surface overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 z-10">
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">OUR PURPOSE</span>
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-lg max-w-2xl">Bridging the Continent Through the Rwanda-Guinea Corridor.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
+                        EastWest Africa is a strategic investment and advisory firm dedicated to forging a high-velocity economic artery between East and West Africa, headquartered in Kigali and Conakry.
+                    </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="rounded-xl overflow-hidden aspect-[4/5] shadow-xl">
+<img class="w-full h-full object-cover" data-alt="A high-angle architectural photograph of a modern glass skyscraper in Kigali, Rwanda, reflecting the warm golden hour light. The building features clean lines and a sophisticated corporate aesthetic, set against a clear blue sky. The lighting is professional and high-key, emphasizing a light-mode color palette with subtle deep navy and gold accents. The atmosphere is one of progress and stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXbkVKBZcLkslClVxDat38NVYsXU37yHJ6ag5kgsS2Siqg7-wJH8wK1kio_fL6x0MW-7L8i0D6D2ThkS25LiKJrty9nIPc43QkuzAnDDPdYpT2LrizwuwmUxEUcyNCnXqiR1JN2Oupwm0BnSDbn-B_7EVNkyhUamQsbkSqTgPLMI4RLFe_SzgzO2U7IHpZMBsDzkdq1H84yYPGRPYxMPN7PIHrTyMR2nmfzLQWkEOwIqHtbkWmWPg8iWxI3zBYOnPDrGcAKn4XwjDP"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-white p-8 rounded-lg shadow-lg border border-outline-variant hidden md:block max-w-[280px]">
+<p class="font-headline-sm text-headline-sm text-primary mb-2">$4.2B+</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Capital Facilitated Across the Corridor since 2021</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission -->
+<section class="py-section-padding bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md">Our Vision</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            To serve as the definitive institutional bridge for intra-African trade, where the logistical efficiency of the East meets the vast resource potential of the West, creating a unified economic powerhouse.
+                        </p>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md">Our Mission</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                            We provide the intelligence, networking, and capital frameworks necessary for enterprise leaders to navigate the Rwanda-Guinea corridor with absolute confidence and strategic clarity.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Corridor: Strategic Importance -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16">
+<span class="font-label-caps text-label-caps text-secondary mb-stack-sm block">THE STRATEGY</span>
+<h2 class="font-headline-md text-headline-md text-primary">The Rwanda-Guinea Connection</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="p-8 border border-outline-variant rounded-xl executive-gradient">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">hub</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Logistics Hub</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Leveraging Rwanda's position as a regional air cargo and digital services hub to streamline West African resource exports.
+                        </p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl executive-gradient">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">account_balance</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Capital Flow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Creating integrated investment frameworks that allow institutional capital to flow seamlessly between the Kigali International Financial Centre and Conakry.
+                        </p>
+</div>
+<div class="p-8 border border-outline-variant rounded-xl executive-gradient">
+<span class="material-symbols-outlined text-secondary text-4xl mb-6">handshake</span>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4">Policy Synergy</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                            Advising on bilateral trade agreements that reduce barriers for cross-continental enterprise expansion and talent mobility.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Values: Bento Grid -->
+<section class="py-section-padding bg-primary-container text-on-primary-fixed">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-white">Our Foundations</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-white/5 p-10 rounded-xl border border-white/10">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6" style="font-variation-settings: 'FILL' 1;">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-white mb-4">Transparency</h3>
+<p class="font-body-md text-body-md text-on-primary-container">
+                            Operating with the highest standards of institutional disclosure and data integrity. Every transaction and advisory engagement is grounded in verifiable economic reality and ethical governance.
+                        </p>
+</div>
+<div class="bg-white/5 p-10 rounded-xl border border-white/10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6">military_tech</span>
+<h3 class="font-headline-sm text-headline-sm text-white mb-4">Excellence</h3>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container">Superior delivery in strategy and execution.</p>
+</div>
+<div class="bg-white/5 p-10 rounded-xl border border-white/10 flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-secondary-fixed-dim text-5xl mb-6">bolt</span>
+<h3 class="font-headline-sm text-headline-sm text-white mb-4">Impact</h3>
+</div>
+<p class="font-body-md text-body-md text-on-primary-container">Measurable growth for local economies.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Team -->
+<section class="py-section-padding bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="mb-16">
+<h2 class="font-headline-md text-headline-md text-primary">Executive Leadership</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-4">A team of seasoned policymakers and finance professionals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Leader 1 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional headshot of a middle-aged male executive in a sharp navy suit and white shirt, standing against a blurred corporate background. The lighting is soft and flattering, typical of a high-end corporate portrait. The overall aesthetic is clean, professional, and authoritative, fitting into a modern financial institution's brand. The color palette is dominated by whites and deep navies." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMS8j3jH9kH0dAoSap2OS4Q2Xsu0_BDY_gygXbNLVMhxCohXtFf3jZM6YXpagCiuQmAxHXfe6fb-5iAlWSIkbvC5UYj1VproQDBsTb2Cg1Z2lnzeyemlzziMQg48_KSFvcj1sDjZ457JsIZftJb79YCTIyaaCzffq5xbr7ZlWDyo5uWXOd_Fp7gLZhqtygSc0Ogg6VAx2SbQhH0mRB0GAyVfm_EPN1OdkMz-6S9M-hQG927yLvsiZPbDHHrjn625Yt7Y9wThFgwrn"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Dr. Aris Gakwaya</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-4">CHIEF EXECUTIVE OFFICER</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Former advisor to regional development banks with 20 years of experience in African macro-economics.</p>
+</div>
+<!-- Leader 2 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional headshot of a female executive in a charcoal grey blazer, exuding confidence and leadership. She is set in a bright, modern office space with large windows in the background. The lighting is natural and sophisticated. The image follows a high-key light-mode aesthetic, emphasizing clarity and corporate prestige with a palette of soft greys and crisp whites." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnjVMhHIGRExAGfqvpesltAnLhicZOPNjLf3wJMRQuUqeQlCYwKl7YuVP0TZ4tQvqDzQNvqgym_OBzbcLIuA2B_-5YnOM-6yrycm20N-jqSkfcAUrGg5UDdyhgjB9Ow2RKDsQ5wJmzOCvSJbqrkbx5UKwlzf7rZtOvzXdF3E75_DWzjlNkwlJjrmfu2GkXT8P6R8tg9NQncXEx-vzpn0vlQku3ClC5GRJKUFy2T6uICZR7Wc-XmPh92q2pYBh4qrmh9iPFn_a4Jjh"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Mariama Diallo</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-4">MANAGING DIRECTOR, CONAKRY</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Expert in mineral economics and public-private partnerships across the West African region.</p>
+</div>
+<!-- Leader 3 -->
+<div class="group">
+<div class="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A professional headshot of a male finance executive in a light blue shirt, looking directly into the camera with a friendly yet professional expression. The setting is a minimalist, modern boardroom with clean architectural details. The lighting is even and bright, supporting a premium corporate visual identity. The color scheme is light and airy with professional blue tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrYKxETl9vY2XIVVm6RqChsYp31_o5HCsNmCq-81VPBn1JnW_gSR48q95ZhngdZNDRpt3Wvge4qS-Uu1xvyvtIO2rORTt4EqiuPOqENIBtAT0ED1_5UeQfl7It_AM5DyNyPZYgmsC0dlm9d9GmfNyhcUbLvRRpJDXhNjMB3Bp_Ky14LB1x4MFhj9YquOHPKXR35hD8oQzbWY3fFV8e9MfsvgYSFlhQS3YghZx8__v8ZsGckNOTM2xfeiRGuBklM6Ri5F0R9KN8ZQKM"/>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Jean-Paul Ndoli</h4>
+<p class="font-label-caps text-label-caps text-secondary mb-4">HEAD OF INVESTMENT ADVISORY</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Leading the capital markets division with a focus on cross-border trade finance and infrastructure debt.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Regional Presence: Map/List -->
+<section class="py-section-padding bg-surface-container-low">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div>
+<span class="font-label-caps text-label-caps text-secondary mb-stack-sm block">LOCATIONS</span>
+<h2 class="font-headline-md text-headline-md text-primary mb-8">Strategically Positioned</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Kigali, Rwanda</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">East African Headquarters<br/>Kacyiru District, Financial Hub</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary mb-1">Conakry, Guinea</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">West African Headquarters<br/>Kaloum Business Center</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative bg-white p-4 rounded-xl shadow-lg border border-outline-variant aspect-video overflow-hidden">
+<div class="w-full h-full bg-slate-100 flex items-center justify-center grayscale opacity-60" data-location="Rwanda and Guinea" style="">
+<!-- Placeholder for actual map implementation -->
+<img class="w-full h-full object-cover" data-alt="A stylized, high-contrast monochrome map of Africa highlighting the connection between Rwanda and Guinea. The map uses a sophisticated design with clean lines and a premium corporate feel. Subtle gold dotted lines represent the trade corridor. The background is a crisp white, and the map itself is in shades of charcoal and light grey, fitting the modern corporate aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBoQQMhuji8OYKrEWaeid76YIxBgICVGmOpf8WGJJFmoyr_cUGdKiMhkIq8MvjmVqZb95taopBMlnQfhAAx1FB-t3YN6SG6nxdD_ZNhFjIyDLhEQ7cKApZWKuPpG-Yxh1sBmVdvGSZCFQhwTqiWVCr63F7ym0RR3p6H7N6LQ8L6NhoGksRW0nfiJCz8beDElVh4sgOJ1JdzLYUGlzClHDrxHxTrZoId_Tb1kWH_KlBrUrk7PNpAR9H-EUHm3rxBBuukWRBeFHsHqwa"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed mb-6">EastWest Africa</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container mb-4">
+                    Connecting Rwanda &amp; Guinea through strategic capital and advisory excellence.
+                </p>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">RESOURCES</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Investment Framework</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Insights</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">LEGAL</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-caps text-label-caps text-primary dark:text-primary-fixed mb-6">SUPPORT</h5>
+<ul class="space-y-4">
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact Support</a></li>
+<li><a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Offices</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container">
+                © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
+            </p>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-container": "#76849f",
+                      "on-secondary": "#ffffff",
+                      "secondary-fixed-dim": "#e9c176",
+                      "primary-fixed": "#d6e3ff",
+                      "inverse-surface": "#2e3132",
+                      "outline-variant": "#c5c6cd",
+                      "on-tertiary-container": "#349557",
+                      "surface-container-low": "#f3f4f5",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#005228",
+                      "surface-dim": "#d9dadb",
+                      "tertiary-fixed-dim": "#7ada95",
+                      "primary": "#000000",
+                      "on-secondary-container": "#785a1a",
+                      "on-primary-fixed": "#0d1c32",
+                      "primary-container": "#0d1c32",
+                      "surface": "#f8f9fa",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed": "#96f7af",
+                      "on-primary-fixed-variant": "#39475f",
+                      "surface-container": "#edeeef",
+                      "surface-tint": "#515f78",
+                      "error": "#ba1a1a",
+                      "inverse-primary": "#b9c7e4",
+                      "surface-container-lowest": "#ffffff",
+                      "outline": "#75777e",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-background": "#191c1d",
+                      "on-surface-variant": "#44474d",
+                      "surface-bright": "#f8f9fa",
+                      "on-secondary-fixed-variant": "#5d4201",
+                      "error-container": "#ffdad6",
+                      "surface-container-high": "#e7e8e9",
+                      "on-error-container": "#93000a",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "on-tertiary-fixed": "#00210c",
+                      "secondary-container": "#fed488",
+                      "on-secondary-fixed": "#261900",
+                      "surface-variant": "#e1e3e4",
+                      "tertiary": "#000000",
+                      "secondary": "#775a19",
+                      "on-surface": "#191c1d",
+                      "secondary-fixed": "#ffdea5",
+                      "background": "#f8f9fa",
+                      "tertiary-container": "#00210c",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-padding": "80px",
+                      "gutter": "24px",
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "label-caps": ["Inter"],
+                      "headline-md": ["Source Serif 4"],
+                      "data-tabular": ["Inter"],
+                      "body-md": ["Inter"],
+                      "display-lg": ["Source Serif 4"],
+                      "headline-sm": ["Source Serif 4"],
+                      "display-lg-mobile": ["Source Serif 4"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "headline-md": ["30px", {"lineHeight": "38px", "fontWeight": "600"}],
+                      "data-tabular": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary docked full-width top-0 z-50 sticky">
+<div class="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</div>
+<nav class="hidden md:flex items-center space-x-stack-lg">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Opportunities</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Insights</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Services</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Events</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Sectors</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About</a>
+</nav>
+<div class="flex items-center space-x-stack-md">
+<button class="hidden lg:block text-on-surface font-semibold hover:text-secondary transition-colors duration-200">Login</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-semibold hover:opacity-80 transition-opacity">Contact Us</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto text-center border-b border-outline-variant">
+<h1 class="font-display-lg text-display-lg mb-stack-md">Global Access, <span class="text-secondary">Local Presence</span>.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Connecting Rwanda and Guinea through strategic partnership and investment framework excellence. Reach out to our executive team.</p>
+</section>
+<!-- Contact Form & Specialist Paths -->
+<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Inquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-stack-lg rounded-xl border border-outline-variant shadow-sm">
+<h2 class="font-headline-md text-headline-md mb-stack-lg">Send an Inquiry</h2>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-stack-md">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Full Name</label>
+<input class="border border-outline p-3 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="John Doe" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Company Name</label>
+<input class="border border-outline p-3 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="Enterprise Ltd" type="text"/>
+</div>
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Interest Area</label>
+<select class="border border-outline p-3 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none appearance-none bg-white">
+<option>Investment Framework</option>
+<option>General Partnerships</option>
+<option>Media Inquiries</option>
+<option>Logistic Support</option>
+</select>
+</div>
+<div class="md:col-span-2 flex flex-col gap-2">
+<label class="font-label-caps text-label-caps uppercase text-on-surface-variant">Message</label>
+<textarea class="border border-outline p-3 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none" placeholder="How can we assist your business expansion?" rows="5"></textarea>
+</div>
+<div class="md:col-span-2 pt-stack-sm">
+<button class="bg-primary text-on-primary w-full py-4 rounded-lg font-bold text-lg hover:opacity-90 transition-opacity">Submit Request</button>
+</div>
+</form>
+</div>
+<!-- Specialized Paths -->
+<div class="lg:col-span-5 flex flex-col gap-stack-md">
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant group hover:border-secondary transition-colors">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">campaign</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1">Media Inquiries</h3>
+<p class="font-body-md text-on-surface-variant">For press releases, brand assets, and interview requests with our leadership.</p>
+<a class="text-primary font-bold mt-2 block hover:underline" href="mailto:media@eastwestafrica.com">media@eastwestafrica.com</a>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant group hover:border-secondary transition-colors">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1">Investment Support</h3>
+<p class="font-body-md text-on-surface-variant">Strategic guidance for high-net-worth individuals and corporate institutions.</p>
+<a class="text-primary font-bold mt-2 block hover:underline" href="mailto:invest@eastwestafrica.com">invest@eastwestafrica.com</a>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-6 rounded-xl border border-outline-variant group hover:border-secondary transition-colors">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">handshake</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1">General Partnerships</h3>
+<p class="font-body-md text-on-surface-variant">Explore collaborative opportunities within the Guinea-Rwanda economic corridor.</p>
+<a class="text-primary font-bold mt-2 block hover:underline" href="mailto:partners@eastwestafrica.com">partners@eastwestafrica.com</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Office Details & Map Section -->
+<section class="bg-surface-container-high py-section-padding px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
+<div>
+<h2 class="font-display-lg text-display-lg mb-stack-lg">Regional Headquarters</h2>
+<div class="space-y-stack-lg">
+<div class="flex gap-stack-md">
+<div class="bg-primary text-on-primary w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm">Kigali, Rwanda</h4>
+<p class="text-on-surface-variant mt-1">Nyarutarama Business District, KG 9 Ave<br/>Level 4, EastWest Plaza, Kigali</p>
+<p class="font-semibold text-primary mt-2">+250 788 000 000</p>
+</div>
+</div>
+<div class="flex gap-stack-md">
+<div class="bg-primary text-on-primary w-12 h-12 flex items-center justify-center rounded-lg shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm">Conakry, Guinea</h4>
+<p class="text-on-surface-variant mt-1">Cité des Nations, Kaloum District<br/>Immeuble Horizon, Conakry</p>
+<p class="font-semibold text-primary mt-2">+224 622 000 000</p>
+</div>
+</div>
+</div>
+</div>
+<div class="rounded-xl overflow-hidden h-[450px] shadow-lg border border-outline-variant relative">
+<img class="w-full h-full object-cover grayscale brightness-50" data-alt="A professional, high-detail cartographic map highlighting the African continent with specific elegant glowing markers on Kigali, Rwanda and Conakry, Guinea. The map uses a sophisticated dark navy and slate grey color palette with subtle gold connecting lines representing trade corridors. The aesthetic is corporate and modern, featuring clean typography and minimal icons that emphasize stability and regional connectivity." data-location="Rwanda and Guinea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZYHPlapSp4Zh2NHrveRMmDHs7Gjexy2HpjFatYOjw2TYBpKAT3vNRN9PQKSVI_o7g-Lf3qa6Dcj65Vx5Jqxls_yho5mTtMKLnkgR-OBZtG3yTfhPgOKDlU7wsEYg7jFJXBgOY9D1czyA8ttnRP-Rdt_mHOOCT3Iy578iL92HXa9_v-zYFqBh1PAXhhXlQ0XgjCcNf5r-Erodm-KV04SCa9Er3HMpwoHZJuAW2GyrWsFlfU8JhBnJl4GPBU2FFWR2A2jPjGH05bQCs"/>
+<div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute bottom-6 left-6 bg-surface-container-lowest p-4 rounded-lg shadow-xl border border-outline-variant">
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Operational Hubs</p>
+<p class="font-body-md font-bold">Kigali &amp; Conakry</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-stack-lg">
+<h2 class="font-headline-md text-headline-md">Frequently Asked Questions</h2>
+<p class="text-on-surface-variant">Quick answers for potential investors and partners.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-4xl mx-auto">
+<div class="p-6 border-b border-outline-variant">
+<h4 class="font-body-lg font-bold mb-2">How do I register as a potential investor?</h4>
+<p class="font-body-md text-on-surface-variant">Submit your initial inquiry via the form above selecting 'Investment Support'. Our compliance team will reach out within 48 hours with the framework documentation.</p>
+</div>
+<div class="p-6 border-b border-outline-variant">
+<h4 class="font-body-lg font-bold mb-2">Are there physical offices in both countries?</h4>
+<p class="font-body-md text-on-surface-variant">Yes, EastWest Africa maintains fully staffed operational headquarters in both Kigali and Conakry to facilitate localized business operations.</p>
+</div>
+<div class="p-6 border-b border-outline-variant">
+<h4 class="font-body-lg font-bold mb-2">What sectors do you primarily support?</h4>
+<p class="font-body-md text-on-surface-variant">We focus on strategic sectors including Mining, Agriculture, Digital Infrastructure, and Logistics to drive bilateral economic growth.</p>
+</div>
+<div class="p-6 border-b border-outline-variant">
+<h4 class="font-body-lg font-bold mb-2">Can I request a direct meeting?</h4>
+<p class="font-body-md text-on-surface-variant">Direct meetings with regional directors can be scheduled following an initial project review. Please provide a summary of your proposal in your message.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div class="md:col-span-1">
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed mb-stack-sm">EastWest Africa</div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container">Strategic economic bridges between East and West Africa.</p>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-label-caps text-label-caps uppercase text-primary mb-2">Legal</h5>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Terms of Service</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Investment Framework</a>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-label-caps text-label-caps uppercase text-primary mb-2">Contact</h5>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Contact Support</a>
+<a class="text-on-surface-variant dark:text-on-primary-container hover:text-primary dark:hover:text-primary-fixed transition-colors" href="#">Newsletter</a>
+</div>
+<div class="flex flex-col gap-2">
+<h5 class="font-label-caps text-label-caps uppercase text-primary mb-2">Subscribe</h5>
+<div class="flex border border-outline rounded-lg overflow-hidden">
+<input class="bg-transparent p-2 outline-none w-full border-none focus:ring-0" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-4"><span class="material-symbols-outlined text-sm">arrow_forward</span></button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant/30 text-center text-on-surface-variant dark:text-on-primary-container text-sm">
+            © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
+        </div>
+</footer>
+</body></html>
