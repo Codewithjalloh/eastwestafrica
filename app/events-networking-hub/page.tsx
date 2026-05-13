@@ -1,11 +1,13 @@
+import { MobileNav } from "@/components/mobile-nav";
+
 export default function Page() {
   return (
 <>
 {/* TopNavBar */}
 <header className="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary docked full-width top-0 z-50 sticky">
-<nav className="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
-<div className="flex items-center gap-stack-lg">
-<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
+<nav className="flex min-w-0 w-full items-center justify-between gap-3 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<div className="flex min-w-0 items-center gap-stack-lg">
+<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed shrink-0 truncate">EastWest Africa</a>
 <div className="hidden md:flex items-center gap-stack-md">
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/investment-opportunities">Opportunities</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/market-insights-intelligence">Insights</a>
@@ -15,7 +17,9 @@ export default function Page() {
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/our-story">About</a>
 </div>
 </div>
-<div className="flex items-center gap-stack-md">
+<div className="flex shrink-0 items-center gap-2 md:gap-stack-md">
+<MobileNav />
+<div className="hidden md:flex items-center gap-stack-md">
 <button className="hidden lg:flex items-center gap-2 px-4 py-2 border border-outline rounded-lg font-label-caps text-label-caps text-on-surface-variant hover:bg-surface-variant transition-colors">
 <span className="material-symbols-outlined text-[20px]">search</span>
                     Search
@@ -23,18 +27,19 @@ export default function Page() {
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">Login</a>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-label-caps hover:opacity-80 transition-opacity">Contact Us</a>
 </div>
+</div>
 </nav>
 </header>
-<main className="max-w-container-max mx-auto px-margin-desktop py-section-padding space-y-section-padding">
+<main className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding space-y-12 md:space-y-section-padding">
 {/* Featured Event Section */}
-<section className="relative h-[600px] rounded-xl overflow-hidden group">
+<section className="relative min-h-[280px] h-[52svh] md:h-[600px] rounded-xl overflow-hidden group">
 <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/40 to-transparent z-10"></div>
 <img alt="Featured Event" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDafVxkN8i-VaN8ayy4CIyBn4V7NgvrF2_ipAaudf_E5F1TwTWmIPpwiKSsNZL15DDeIvJoDuAg2pOqaHm9oFSjIp9g3Bj8pKiHRDUvFuvsXugblt3OMwQAd55ff89jUkgsVWeQ-kJZ8CDc15BdMmpdUlnjQxCTK7CP5j5r3CmZ0MzfwGb9CL96GfcY0YyvotRUs2oDtYDiubRSq9-gg1YSIJD1B9awJJi5IFUc_Bbv3-qIGPuZxXQiVygK8jOqykkOdGF9JjdJvmLv" />
-<div className="relative z-20 h-full flex flex-col justify-center px-12 max-w-2xl text-on-primary">
+<div className="relative z-20 h-full flex flex-col justify-center px-margin-mobile py-8 md:px-12 max-w-2xl text-on-primary">
 <span className="inline-block bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-caps text-label-caps mb-4">Flagship Event</span>
-<h1 className="font-display-lg text-display-lg mb-6">East-West Investment Summit 2024</h1>
+<h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-6">East-West Investment Summit 2024</h1>
 <p className="font-body-lg text-body-lg mb-8 opacity-90">Join over 500 global investors and African policymakers in Kigali for the definitive forum on transcontinental economic infrastructure.</p>
-<div className="flex items-center gap-8 mb-10 text-on-primary/80">
+<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-8 mb-10 text-on-primary/80">
 <div className="flex items-center gap-2">
 <span className="material-symbols-outlined">calendar_month</span>
 <span className="font-data-tabular text-data-tabular">October 14-16, 2024</span>
@@ -44,7 +49,7 @@ export default function Page() {
 <span className="font-data-tabular text-data-tabular">Kigali Convention Centre</span>
 </div>
 </div>
-<div className="flex gap-4">
+<div className="flex flex-wrap gap-3">
 <button className="bg-secondary-fixed text-on-secondary-fixed px-8 py-3 rounded-lg font-label-caps text-label-caps hover:bg-secondary-fixed-dim transition-colors">Register Now</button>
 <button className="border border-on-primary text-on-primary px-8 py-3 rounded-lg font-label-caps text-label-caps hover:bg-on-primary/10 transition-colors">Download Agenda</button>
 </div>
@@ -195,7 +200,7 @@ export default function Page() {
 </main>
 {/* Footer */}
 <footer className="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
-<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding max-w-container-max mx-auto">
 <div className="space-y-stack-md">
 <a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
 <p className="font-body-md text-on-surface-variant dark:text-on-primary-container">Connecting Rwanda &amp; Guinea through strategic investment and operational excellence.</p>
@@ -219,7 +224,7 @@ export default function Page() {
 <a className="font-body-md text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletter</a>
 </div>
 </div>
-<div className="px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto">
+<div className="px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant max-w-container-max mx-auto">
 <p className="font-body-md text-center md:text-left text-on-surface-variant dark:text-on-primary-container">© 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.</p>
 </div>
 </footer>

@@ -1,11 +1,13 @@
+import { MobileNav } from "@/components/mobile-nav";
+
 export default function Page() {
   return (
 <>
 {/* TopNavBar (Shared Component) */}
 <header className="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary sticky top-0 z-50">
-<div className="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
-<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
-<nav className="hidden lg:flex items-center space-x-stack-lg">
+<div className="flex min-w-0 w-full items-center justify-between gap-3 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed shrink-0 truncate">EastWest Africa</a>
+<nav className="hidden md:flex items-center space-x-stack-lg">
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/investment-opportunities">Opportunities</a>
 <a className="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1" href="/market-insights-intelligence">Insights</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/strategic-partnerships">Services</a>
@@ -13,7 +15,9 @@ export default function Page() {
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/sector-analysis-mining-resources">Sectors</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/our-story">About</a>
 </nav>
-<div className="flex items-center space-x-stack-md">
+<div className="flex shrink-0 items-center space-x-2 md:space-x-stack-md">
+<MobileNav />
+<div className="hidden md:flex items-center space-x-stack-md">
 <div className="relative hidden md:block">
 <span className="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
 <input className="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant rounded-lg text-body-md focus:outline-none focus:ring-1 focus:ring-primary w-64" placeholder="Search insights..." type="text"/>
@@ -21,10 +25,11 @@ export default function Page() {
 <a href="/contact-support" className="px-5 py-2 rounded-lg bg-primary text-on-primary font-label-caps hover:opacity-80 transition-opacity">Contact Us</a>
 </div>
 </div>
+</div>
 </header>
-<main className="max-w-container-max mx-auto px-margin-desktop py-12">
+<main className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
 {/* Featured Lead Story Section */}
-<section className="mb-section-padding">
+<section className="mb-12 md:mb-section-padding">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
 <div className="lg:col-span-8 group cursor-pointer">
 <div className="relative overflow-hidden rounded-xl mb-stack-md aspect-[16/9]">
@@ -35,7 +40,7 @@ export default function Page() {
 </div>
 <div>
 <p className="font-label-caps text-label-caps text-secondary mb-2 uppercase tracking-widest">Featured Analysis • 12 MIN READ</p>
-<h1 className="font-display-lg text-display-lg mb-4 leading-tight hover:text-secondary transition-colors">The Rwanda-Guinea Corridor: A New Blueprint for Intra-African Trade Dynamics</h1>
+<h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-4 leading-tight hover:text-secondary transition-colors">The Rwanda-Guinea Corridor: A New Blueprint for Intra-African Trade Dynamics</h1>
 <p className="font-body-lg text-body-lg text-on-surface-variant mb-6 line-clamp-3">An in-depth examination of the logistical and regulatory framework connecting East and West Africa. As Kigali and Conakry strengthen bilateral ties, we analyze the emerging investment opportunities in infrastructure and digital banking services.</p>
 <div className="flex items-center space-x-stack-sm text-on-surface-variant">
 <span className="font-label-caps text-label-caps font-bold text-primary">Dr. Amara Kouyaté</span>
@@ -65,7 +70,7 @@ export default function Page() {
 </div>
 </section>
 {/* Newsletter & Archive Bento Grid Section */}
-<section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section-padding">
+<section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-12 md:mb-section-padding">
 {/* Market Updates Bento Card */}
 <div className="md:col-span-8 bg-surface-container-low border border-outline-variant p-8 rounded-xl">
 <div className="flex justify-between items-center mb-8">
@@ -156,7 +161,7 @@ export default function Page() {
 </main>
 {/* Footer (Shared Component) */}
 <footer className="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
-<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding max-w-container-max mx-auto">
 <div className="md:col-span-1">
 <a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
 <p className="text-on-surface-variant dark:text-on-primary-container font-body-md mb-6">
@@ -193,7 +198,7 @@ export default function Page() {
 </nav>
 </div>
 </div>
-<div className="px-margin-desktop py-8 max-w-container-max mx-auto border-t border-outline-variant dark:border-primary-fixed-dim/20">
+<div className="px-margin-mobile md:px-margin-desktop py-8 max-w-container-max mx-auto border-t border-outline-variant dark:border-primary-fixed-dim/20">
 <p className="text-on-surface-variant dark:text-on-primary-container text-body-md text-center">
                 © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
             </p>

@@ -1,10 +1,12 @@
+import { MobileNav } from "@/components/mobile-nav";
+
 export default function Page() {
   return (
 <>
 {/* TopNavBar */}
 <header className="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary fixed top-0 w-full z-50">
-<div className="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
-<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
+<div className="flex min-w-0 w-full items-center justify-between gap-3 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed shrink-0 truncate">EastWest Africa</a>
 <nav className="hidden md:flex space-x-stack-lg items-center">
 <a className="text-on-surface-variant dark:text-on-primary-container font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/investment-opportunities">Opportunities</a>
 <a className="text-on-surface-variant dark:text-on-primary-container font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/market-insights-intelligence">Insights</a>
@@ -13,27 +15,30 @@ export default function Page() {
 <a className="text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1 font-body-md text-body-md" href="/sector-analysis-mining-resources">Sectors</a>
 <a className="text-on-surface-variant dark:text-on-primary-container font-body-md text-body-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/our-story">About</a>
 </nav>
-<div className="flex items-center space-x-stack-md">
+<div className="flex shrink-0 items-center space-x-2 md:space-x-stack-md">
+<MobileNav />
+<div className="hidden md:flex items-center space-x-stack-md">
 <button className="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps rounded-lg hover:bg-primary hover:text-on-primary transition-all">Login</button>
 <a href="/contact-support" className="px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps rounded-lg hover:opacity-80 transition-opacity">Contact Us</a>
+</div>
 </div>
 </div>
 </header>
 <main className="pt-20">
 {/* Hero Section */}
-<section className="relative h-[614px] flex items-center">
+<section className="relative min-h-[50svh] md:h-[614px] flex items-center">
 <div className="absolute inset-0 z-0">
 <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDSIHkQVDVdx457W6o5N3Fq6XZJ3HKUspmYYi3HMhTUekQnab_CSDgb2l7OqmczvQykAIfbr2kM9xKdTUBbE2nOaL-pTep5FV8_TC7dz4-y4TWD4WrU15uZIcrOMWQfdZzDMrBbsyZcRWkcOeyP2isvy69rDt6uANn1s2L6y6moy1w50VoxgF3HVOVW5MIKd_c2WlWEGko6pd1tr4wwSdjM7vhjmipyzzHIzXnLhKg5XCM1VUOovEQMeMdnvr_nABSAdMv4i8G0RmI" />
 <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
 </div>
-<div className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full text-white">
+<div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full text-white">
 <span className="font-label-caps text-label-caps text-secondary-fixed tracking-widest block mb-4">SECTOR STRATEGY</span>
-<h1 className="font-display-lg text-display-lg max-w-2xl mb-6">Sustainable Energy &amp; Infrastructure</h1>
+<h1 className="font-display-lg text-display-lg-mobile md:text-display-lg max-w-2xl mb-6">Sustainable Energy &amp; Infrastructure</h1>
 <p className="font-body-lg text-body-lg max-w-xl text-primary-fixed opacity-90">Deep-diving into the backbone of East-West connectivity, focusing on renewable power generation and transnational logistics corridors.</p>
 </div>
 </section>
 {/* Market Overview Bento */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="mb-stack-lg flex justify-between items-end">
 <div>
 <h2 className="font-headline-md text-headline-md">Market Intelligence</h2>
@@ -100,8 +105,8 @@ export default function Page() {
 </div>
 </section>
 {/* Regulatory & Infrastructure */}
-<section className="bg-surface-container-low py-section-padding">
-<div className="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+<section className="bg-surface-container-low py-12 md:py-section-padding">
+<div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 <div>
 <h2 className="font-headline-md text-headline-md mb-stack-lg">Regulatory Framework &amp; Policy</h2>
 <ul className="space-y-stack-md">
@@ -148,7 +153,7 @@ export default function Page() {
 </div>
 </section>
 {/* Active Opportunities */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="text-center mb-16">
 <h2 className="font-headline-md text-headline-md">Active Investment Opportunities</h2>
 <p className="text-on-surface-variant max-w-2xl mx-auto mt-4">Vetted pipeline projects currently seeking equity partners or lead contractors.</p>
@@ -192,8 +197,8 @@ export default function Page() {
 </div>
 </section>
 {/* Insights & Events */}
-<section className="bg-primary-container text-white py-section-padding">
-<div className="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<section className="bg-primary-container text-white py-12 md:py-section-padding">
+<div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
 <div className="md:col-span-2">
 <h2 className="font-headline-md text-headline-md mb-8">Expert Analysis</h2>
 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -260,7 +265,7 @@ export default function Page() {
 </main>
 {/* Footer */}
 <footer className="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
-<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding max-w-container-max mx-auto">
 <div className="col-span-1 md:col-span-2">
 <a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
 <p className="text-on-surface-variant dark:text-on-primary-container max-w-sm mb-6">Strategic investment bridge connecting the Great Lakes region with West African coastal markets. Focused on sustainable growth and economic integration.</p>

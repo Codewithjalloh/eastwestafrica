@@ -1,10 +1,12 @@
+import { MobileNav } from "@/components/mobile-nav";
+
 export default function Page() {
   return (
 <>
 {/* TopNavBar */}
 <nav className="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary docked full-width top-0 z-50 sticky">
-<div className="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
-<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
+<div className="flex min-w-0 w-full items-center justify-between gap-3 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed shrink-0 truncate">EastWest Africa</a>
 <div className="hidden md:flex items-center gap-stack-lg">
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/investment-opportunities">Opportunities</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/market-insights-intelligence">Insights</a>
@@ -13,16 +15,19 @@ export default function Page() {
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/sector-analysis-mining-resources">Sectors</a>
 <a className="font-body-md text-body-md text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary-fixed-dim pb-1" href="/our-story">About</a>
 </div>
-<div className="flex items-center gap-stack-md">
+<div className="flex shrink-0 items-center gap-2 md:gap-stack-md">
+<MobileNav />
+<div className="hidden md:flex items-center gap-stack-md">
 <button className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container px-4 py-2 hover:text-primary transition-colors">Login</button>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded-lg font-body-md text-body-md hover:bg-opacity-90 transition-opacity">Contact Us</a>
+</div>
 </div>
 </div>
 </nav>
 <main>
 {/* Hero: Storytelling Canvas */}
-<section className="relative py-section-padding bg-surface overflow-hidden">
-<div className="max-w-container-max mx-auto px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<section className="relative py-12 md:py-section-padding bg-surface overflow-hidden">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
 <div className="lg:col-span-7 z-10">
 <span className="font-label-caps text-label-caps text-secondary mb-stack-md block">OUR PURPOSE</span>
 <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-stack-lg max-w-2xl">Bridging the Continent Through the Rwanda-Guinea Corridor.</h1>
@@ -42,8 +47,8 @@ export default function Page() {
 </div>
 </section>
 {/* Vision & Mission */}
-<section className="py-section-padding bg-surface-container-low border-y border-outline-variant">
-<div className="max-w-container-max mx-auto px-margin-desktop">
+<section className="py-12 md:py-section-padding bg-surface-container-low border-y border-outline-variant">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
 <div>
 <h2 className="font-headline-md text-headline-md text-primary mb-stack-md">Our Vision</h2>
@@ -61,8 +66,8 @@ export default function Page() {
 </div>
 </section>
 {/* The Corridor: Strategic Importance */}
-<section className="py-section-padding bg-surface">
-<div className="max-w-container-max mx-auto px-margin-desktop">
+<section className="py-12 md:py-section-padding bg-surface">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div className="mb-16">
 <span className="font-label-caps text-label-caps text-secondary mb-stack-sm block">THE STRATEGY</span>
 <h2 className="font-headline-md text-headline-md text-primary">The Rwanda-Guinea Connection</h2>
@@ -93,8 +98,8 @@ export default function Page() {
 </div>
 </section>
 {/* Core Values: Bento Grid */}
-<section className="py-section-padding bg-primary-container text-on-primary-fixed">
-<div className="max-w-container-max mx-auto px-margin-desktop">
+<section className="py-12 md:py-section-padding bg-primary-container text-on-primary-fixed">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div className="text-center mb-16">
 <h2 className="font-headline-md text-headline-md text-white">Our Foundations</h2>
 </div>
@@ -124,8 +129,8 @@ export default function Page() {
 </div>
 </section>
 {/* Leadership Team */}
-<section className="py-section-padding bg-surface">
-<div className="max-w-container-max mx-auto px-margin-desktop">
+<section className="py-12 md:py-section-padding bg-surface">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div className="mb-16">
 <h2 className="font-headline-md text-headline-md text-primary">Executive Leadership</h2>
 <p className="font-body-lg text-body-lg text-on-surface-variant mt-4">A team of seasoned policymakers and finance professionals.</p>
@@ -162,8 +167,8 @@ export default function Page() {
 </div>
 </section>
 {/* Regional Presence: Map/List */}
-<section className="py-section-padding bg-surface-container-low">
-<div className="max-w-container-max mx-auto px-margin-desktop">
+<section className="py-12 md:py-section-padding bg-surface-container-low">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
 <div>
 <span className="font-label-caps text-label-caps text-secondary mb-stack-sm block">LOCATIONS</span>
@@ -201,7 +206,7 @@ export default function Page() {
 </main>
 {/* Footer */}
 <footer className="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
-<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding max-w-container-max mx-auto">
 <div className="md:col-span-1">
 <a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
 <p className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container mb-4">
@@ -231,7 +236,7 @@ export default function Page() {
 </ul>
 </div>
 </div>
-<div className="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
+<div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/30 text-center">
 <p className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container">
                 © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
             </p>

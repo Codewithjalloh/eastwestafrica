@@ -1,10 +1,12 @@
+import { MobileNav } from "@/components/mobile-nav";
+
 export default function Page() {
   return (
 <>
 {/* TopNavBar */}
 <header className="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary docked full-width top-0 z-50 sticky">
-<div className="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
-<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
+<div className="flex min-w-0 w-full items-center justify-between gap-3 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed shrink-0 truncate">EastWest Africa</a>
 <nav className="hidden md:flex items-center space-x-stack-lg">
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/investment-opportunities">Opportunities</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/market-insights-intelligence">Insights</a>
@@ -13,20 +15,23 @@ export default function Page() {
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/sector-analysis-mining-resources">Sectors</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/our-story">About</a>
 </nav>
-<div className="flex items-center space-x-stack-md">
+<div className="flex shrink-0 items-center space-x-2 md:space-x-stack-md">
+<MobileNav />
+<div className="hidden md:flex items-center space-x-stack-md">
 <button className="hidden lg:block text-on-surface font-semibold hover:text-secondary transition-colors duration-200">Login</button>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded-lg font-semibold hover:opacity-80 transition-opacity">Contact Us</a>
+</div>
 </div>
 </div>
 </header>
 <main>
 {/* Hero Section */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto text-center border-b border-outline-variant">
-<h1 className="font-display-lg text-display-lg mb-stack-md">Global Access, <span className="text-secondary">Local Presence</span>.</h1>
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center border-b border-outline-variant">
+<h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md">Global Access, <span className="text-secondary">Local Presence</span>.</h1>
 <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Connecting Rwanda and Guinea through strategic partnership and investment framework excellence. Reach out to our executive team.</p>
 </section>
 {/* Contact Form & Specialist Paths */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
 {/* Inquiry Form */}
 <div className="lg:col-span-7 bg-surface-container-lowest p-stack-lg rounded-xl border border-outline-variant shadow-sm">
@@ -94,7 +99,7 @@ export default function Page() {
 </div>
 </section>
 {/* Office Details & Map Section */}
-<section className="bg-surface-container-high py-section-padding px-margin-desktop">
+<section className="bg-surface-container-high py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop">
 <div className="max-w-container-max mx-auto">
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-gutter items-center">
 <div>
@@ -134,7 +139,7 @@ export default function Page() {
 </div>
 </section>
 {/* FAQ Section */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="text-center mb-stack-lg">
 <h2 className="font-headline-md text-headline-md">Frequently Asked Questions</h2>
 <p className="text-on-surface-variant">Quick answers for potential investors and partners.</p>
@@ -161,7 +166,7 @@ export default function Page() {
 </main>
 {/* Footer */}
 <footer className="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
-<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding max-w-container-max mx-auto">
 <div className="md:col-span-1">
 <a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
 <p className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container">Strategic economic bridges between East and West Africa.</p>
@@ -185,7 +190,7 @@ export default function Page() {
 </div>
 </div>
 </div>
-<div className="px-margin-desktop py-8 border-t border-outline-variant/30 text-center text-on-surface-variant dark:text-on-primary-container text-sm">
+<div className="px-margin-mobile md:px-margin-desktop py-8 border-t border-outline-variant/30 text-center text-on-surface-variant dark:text-on-primary-container text-sm">
             © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
         </div>
 </footer>

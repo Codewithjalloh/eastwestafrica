@@ -1,10 +1,12 @@
+import { MobileNav } from "@/components/mobile-nav";
+
 export default function Page() {
   return (
 <>
 {/* TopNavBar */}
 <header className="bg-surface dark:bg-primary-container border-b border-outline-variant dark:border-primary fixed top-0 w-full z-50">
-<nav className="flex justify-between items-center w-full px-margin-desktop max-w-container-max mx-auto h-20">
-<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
+<nav className="flex min-w-0 w-full items-center justify-between gap-3 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto h-20">
+<a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed shrink-0 truncate">EastWest Africa</a>
 <div className="hidden md:flex items-center space-x-stack-lg">
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/investment-opportunities">Opportunities</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/market-insights-intelligence">Insights</a>
@@ -13,25 +15,28 @@ export default function Page() {
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/sector-analysis-mining-resources">Sectors</a>
 <a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="/our-story">About</a>
 </div>
-<div className="flex items-center space-x-stack-md">
+<div className="flex shrink-0 items-center space-x-2 md:space-x-stack-md">
+<MobileNav />
+<div className="hidden md:flex items-center space-x-stack-md">
 <button className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors">Login</button>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded font-body-md font-bold hover:opacity-80 transition-opacity">Contact Us</a>
+</div>
 </div>
 </nav>
 </header>
 <main className="pt-20">
 {/* Hero Section: Value Proposition */}
-<section className="relative h-[600px] flex items-center overflow-hidden">
+<section className="relative min-h-[50svh] md:h-[600px] flex items-center overflow-hidden">
 <div className="absolute inset-0 z-0">
 <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeyl22hnVOMqmVLMAg5jZ9vQ6X5TTi60oBAQBIKpzHtq7GcQe486eKCQjYIm1Swl4MXgI5-NNBzbUVvF9gso37eDY2qV3mLAASMrjt84vCo_4ndIDKOEz-Xv7DvJ5nkSohjfsvylXtDRT6rvJBteZhUt3K0Li6KG08mQv4luW4midRuV4MRWo_c1BKd5RlyNXjDPXu3Cf3sUAgusfPsR7-xmG1NryLxFZFn5se2s2oAKADGrTTX1PJ5NrXtl_RLfaud3DcrPqZDebv" />
 <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-primary/40"></div>
 </div>
-<div className="relative z-10 px-margin-desktop max-w-container-max mx-auto w-full text-on-primary">
+<div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full text-on-primary">
 <div className="max-w-2xl">
 <span className="font-label-caps text-label-caps text-secondary-fixed-dim block mb-stack-sm">STRATEGIC ALLIANCE</span>
-<h1 className="font-display-lg text-display-lg mb-stack-md leading-tight">Partner With Us to Architect Africa's Economic Future</h1>
+<h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight">Partner With Us to Architect Africa's Economic Future</h1>
 <p className="font-body-lg text-body-lg mb-stack-lg text-on-primary-container brightness-200">We bridge the gap between global institutional capital and high-impact regional development. Join our network of sovereign funds, enterprise leaders, and institutional investors.</p>
-<div className="flex space-x-stack-md">
+<div className="flex flex-col gap-stack-md sm:flex-row sm:items-center sm:gap-stack-md">
 <button className="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:brightness-95 transition-all">Become a Partner</button>
 <button className="border border-on-primary text-on-primary px-8 py-4 rounded-lg font-bold hover:bg-on-primary hover:text-primary transition-all flex items-center">
                             Partner Portal
@@ -42,7 +47,7 @@ export default function Page() {
 </div>
 </section>
 {/* Partner Tiers: Bento Grid Layout */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto">
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="mb-stack-lg text-center">
 <h2 className="font-headline-md text-headline-md text-primary mb-4">Tiers of Partnership</h2>
 <p className="text-on-surface-variant max-w-xl mx-auto">Precision-engineered collaboration frameworks designed for diverse institutional objectives and capital structures.</p>
@@ -90,8 +95,8 @@ export default function Page() {
 </div>
 </section>
 {/* Case Studies: High-End Asymmetric Layout */}
-<section className="bg-surface-container-low py-section-padding overflow-hidden">
-<div className="px-margin-desktop max-w-container-max mx-auto">
+<section className="bg-surface-container-low py-12 md:py-section-padding overflow-hidden">
+<div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div className="flex flex-col md:flex-row gap-gutter">
 <div className="md:w-1/2">
 <h2 className="font-headline-md text-headline-md text-primary mb-stack-md">Cross-Border Success Stories</h2>
@@ -132,8 +137,8 @@ export default function Page() {
 </div>
 </section>
 {/* Onboarding Process: Clean Disciplined Steps */}
-<section className="py-section-padding px-margin-desktop max-w-container-max mx-auto">
-<h2 className="font-headline-md text-headline-md text-primary text-center mb-section-padding">Institutional Onboarding Journey</h2>
+<section className="py-12 md:py-section-padding px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 className="font-headline-md text-headline-md text-primary text-center mb-12 md:mb-section-padding">Institutional Onboarding Journey</h2>
 <div className="relative flex flex-col md:flex-row gap-gutter">
 {/* Connector Line */}
 <div className="hidden md:block absolute top-12 left-0 w-full h-[2px] bg-outline-variant -z-10"></div>
@@ -180,11 +185,11 @@ export default function Page() {
 </div>
 </section>
 {/* Final CTA: Login Portal Entry */}
-<section className="bg-primary-container py-section-padding relative overflow-hidden">
+<section className="bg-primary-container py-12 md:py-section-padding relative overflow-hidden">
 <div className="absolute inset-0 opacity-10">
 <img className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6O8s4u2g_7Pb3QfgGiaD2IMBUbEaogaN4DdrusFA-5_aVtVvh9yty1mF0Y3vgmMEJNIYxCH6UmDqIL9yH6U0cNyK0YGjKZCO5x_9boxbeT1M37zZueQrq_thXg7AgM9wo7iOcXwAT1PJWpGGW0BZSgjVjzHqY6b_SxQq2T8o6t_8sNX7my0zjrqpcQ-g8k8oC59qmMCCezG7-j54tkQAPpan271FSUfQhRqQBUA6FvrFhjStEzlhGOUZydv_OCeD0m4KBgmtFzU0Z" />
 </div>
-<div className="relative z-10 px-margin-desktop max-w-container-max mx-auto text-center">
+<div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center">
 <h2 className="font-display-lg text-display-lg text-on-primary mb-stack-md">Ready to Scale the Corridor?</h2>
 <p className="text-on-primary-container brightness-200 mb-stack-lg max-w-2xl mx-auto">Existing partners can access their dashboard to manage investments, view real-time logistics data, and engage with the regulatory hub.</p>
 <div className="flex flex-col md:flex-row justify-center gap-stack-md">
@@ -199,7 +204,7 @@ export default function Page() {
 </main>
 {/* Footer */}
 <footer className="bg-surface-container-highest dark:bg-primary-container border-t border-outline-variant dark:border-primary">
-<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop py-section-padding max-w-container-max mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 md:py-section-padding max-w-container-max mx-auto">
 <div className="col-span-1 md:col-span-1">
 <a href="/" className="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">EastWest Africa</a>
 <p className="text-on-surface-variant dark:text-on-primary-container text-sm">Providing the institutional framework for high-impact cross-border collaboration between Rwanda and Guinea.</p>
@@ -231,7 +236,7 @@ export default function Page() {
 </div>
 </div>
 </div>
-<div className="px-margin-desktop py-stack-md border-t border-outline-variant/30 text-center text-xs text-on-surface-variant">
+<div className="px-margin-mobile md:px-margin-desktop py-stack-md border-t border-outline-variant/30 text-center text-xs text-on-surface-variant">
             © 2024 EastWest Africa. All rights reserved. Connecting Rwanda &amp; Guinea.
         </div>
 </footer>
