@@ -108,12 +108,22 @@ export function MobileNav() {
               })}
             </nav>
             <div className="border-t border-outline-variant px-margin-mobile py-4 space-y-2">
-              <button
-                type="button"
-                className="w-full rounded-lg border border-outline px-4 py-3 font-label-caps text-label-caps text-on-surface-variant hover:bg-surface-container"
-              >
-                Login
-              </button>
+              <div className="grid grid-cols-2 gap-2">
+                <Link
+                  href="/login"
+                  className="flex items-center justify-center rounded-lg border border-outline-variant px-4 py-3 font-label-caps text-label-caps text-on-surface hover:bg-surface-container-low"
+                  onClick={() => setOpen(false)}
+                >
+                  Login
+                </Link>
+                <Link
+                  href="/register"
+                  className="flex items-center justify-center rounded-lg border border-outline-variant px-4 py-3 font-label-caps text-label-caps text-on-surface hover:bg-surface-container-low"
+                  onClick={() => setOpen(false)}
+                >
+                  Register
+                </Link>
+              </div>
               <Link
                 href="/contact-support"
                 className="flex w-full items-center justify-center rounded-lg bg-primary px-4 py-3 font-label-caps text-label-caps text-on-primary hover:opacity-90"

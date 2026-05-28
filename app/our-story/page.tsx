@@ -18,7 +18,7 @@ export default function Page() {
 <div className="flex shrink-0 items-center gap-2 md:gap-stack-md">
 <MobileNav />
 <div className="hidden md:flex items-center gap-stack-md">
-<button className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container px-4 py-2 hover:text-primary transition-colors">Login</button>
+<a href="/login" className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container px-4 py-2 hover:text-primary transition-colors">Login</a>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded-lg font-body-md text-body-md hover:bg-opacity-90 transition-opacity">Contact Us</a>
 </div>
 </div>
@@ -135,33 +135,42 @@ export default function Page() {
 <h2 className="font-headline-md text-headline-md text-primary">Executive Leadership</h2>
 <p className="font-body-lg text-body-lg text-on-surface-variant mt-4">A team of seasoned policymakers and finance professionals.</p>
 </div>
-<div className="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
 {/* Leader 1 */}
 <div className="group">
 <div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKMS8j3jH9kH0dAoSap2OS4Q2Xsu0_BDY_gygXbNLVMhxCohXtFf3jZM6YXpagCiuQmAxHXfe6fb-5iAlWSIkbvC5UYj1VproQDBsTb2Cg1Z2lnzeyemlzziMQg48_KSFvcj1sDjZ457JsIZftJb79YCTIyaaCzffq5xbr7ZlWDyo5uWXOd_Fp7gLZhqtygSc0Ogg6VAx2SbQhH0mRB0GAyVfm_EPN1OdkMz-6S9M-hQG927yLvsiZPbDHHrjn625Yt7Y9wThFgwrn" />
+<img alt="D.A Jalloh, Chief Executive Officer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/my_profile.jpeg" />
 </div>
-<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Coming soon</h4>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">D.A Jalloh</h4>
 <p className="font-label-caps text-label-caps text-secondary mb-4">CHIEF EXECUTIVE OFFICER</p>
-<p className="font-body-md text-body-md text-on-surface-variant">Former advisor to regional development banks with 20 years of experience in African macro-economics.</p>
+<p className="font-body-md text-body-md text-on-surface-variant">Coming soon</p>
 </div>
 {/* Leader 2 */}
 <div className="group">
-<div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnjVMhHIGRExAGfqvpesltAnLhicZOPNjLf3wJMRQuUqeQlCYwKl7YuVP0TZ4tQvqDzQNvqgym_OBzbcLIuA2B_-5YnOM-6yrycm20N-jqSkfcAUrGg5UDdyhgjB9Ow2RKDsQ5wJmzOCvSJbqrkbx5UKwlzf7rZtOvzXdF3E75_DWzjlNkwlJjrmfu2GkXT8P6R8tg9NQncXEx-vzpn0vlQku3ClC5GRJKUFy2T6uICZR7Wc-XmPh92q2pYBh4qrmh9iPFn_a4Jjh" />
+<div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative bg-surface-container-high flex items-center justify-center">
+<span className="material-symbols-outlined text-[4rem] text-outline-variant" aria-hidden="true">person</span>
 </div>
-<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Coming soon</h4>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Aminata Kaba</h4>
 <p className="font-label-caps text-label-caps text-secondary mb-4">MANAGING DIRECTOR, CONAKRY</p>
-<p className="font-body-md text-body-md text-on-surface-variant">Expert in mineral economics and public-private partnerships across the West African region.</p>
+<p className="font-body-md text-body-md text-on-surface-variant">Coming soon</p>
 </div>
 {/* Leader 3 */}
 <div className="group">
-<div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative">
-<img className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrYKxETl9vY2XIVVm6RqChsYp31_o5HCsNmCq-81VPBn1JnW_gSR48q95ZhngdZNDRpt3Wvge4qS-Uu1xvyvtIO2rORTt4EqiuPOqENIBtAT0ED1_5UeQfl7It_AM5DyNyPZYgmsC0dlm9d9GmfNyhcUbLvRRpJDXhNjMB3Bp_Ky14LB1x4MFhj9YquOHPKXR35hD8oQzbWY3fFV8e9MfsvgYSFlhQS3YghZx8__v8ZsGckNOTM2xfeiRGuBklM6Ri5F0R9KN8ZQKM" />
+<div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative bg-surface-container-high flex items-center justify-center">
+<span className="material-symbols-outlined text-[4rem] text-outline-variant" aria-hidden="true">person</span>
 </div>
-<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Coming soon</h4>
-<p className="font-label-caps text-label-caps text-secondary mb-4">HEAD OF INVESTMENT ADVISORY</p>
-<p className="font-body-md text-body-md text-on-surface-variant">Leading the capital markets division with a focus on cross-border trade finance and infrastructure debt.</p>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Karamoko Nabe</h4>
+<p className="font-label-caps text-label-caps text-secondary mb-4">MANAGING DIRECTOR, GUINEA</p>
+<p className="font-body-md text-body-md text-on-surface-variant">Coming soon</p>
+</div>
+{/* Leader 4 */}
+<div className="group">
+<div className="aspect-[3/4] overflow-hidden rounded-xl mb-6 relative bg-surface-container-high flex items-center justify-center">
+<span className="material-symbols-outlined text-[4rem] text-outline-variant" aria-hidden="true">person</span>
+</div>
+<h4 className="font-headline-sm text-headline-sm text-primary mb-1">Vincent Gasana</h4>
+<p className="font-label-caps text-label-caps text-secondary mb-4">MANAGING DIRECTOR, KIGALI</p>
+<p className="font-body-md text-body-md text-on-surface-variant">Coming soon</p>
 </div>
 </div>
 </div>

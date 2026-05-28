@@ -18,7 +18,6 @@ export default function Page() {
 <div className="flex shrink-0 items-center gap-2 md:gap-stack-md">
 <MobileNav />
 <div className="hidden md:flex items-center gap-stack-md">
-<button className="px-6 py-2 border border-outline text-on-surface-variant font-label-caps text-label-caps rounded-lg hover:bg-surface-container transition-colors">Login</button>
 <a href="/contact-support" className="px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps rounded-lg hover:opacity-80 transition-opacity">Contact Us</a>
 </div>
 </div>

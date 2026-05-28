@@ -24,7 +24,7 @@ export default function Page() {
 <span className="material-symbols-outlined text-[20px]">search</span>
                     Search
                 </button>
-<a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="#">Login</a>
+<a className="font-body-md text-body-md text-on-surface-variant dark:text-on-primary-container hover:text-secondary transition-colors duration-200" href="/login">Login</a>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-caps text-label-caps hover:opacity-80 transition-opacity">Contact Us</a>
 </div>
 </div>

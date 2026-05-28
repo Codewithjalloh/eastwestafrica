@@ -18,7 +18,7 @@ export default function Page() {
 <div className="flex shrink-0 items-center space-x-2 md:space-x-stack-md">
 <MobileNav />
 <div className="hidden md:flex items-center space-x-stack-md">
-<button className="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps rounded-lg hover:bg-primary hover:text-on-primary transition-all">Login</button>
+<a href="/login" className="px-6 py-2 border border-primary text-primary font-label-caps text-label-caps rounded-lg hover:bg-primary hover:text-on-primary transition-all inline-flex items-center">Login</a>
 <a href="/contact-support" className="px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps rounded-lg hover:opacity-80 transition-opacity">Contact Us</a>
 </div>
 </div>

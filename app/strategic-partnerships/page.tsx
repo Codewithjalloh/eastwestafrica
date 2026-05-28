@@ -18,7 +18,7 @@ export default function Page() {
 <div className="flex shrink-0 items-center space-x-2 md:space-x-stack-md">
 <MobileNav />
 <div className="hidden md:flex items-center space-x-stack-md">
-<button className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors">Login</button>
+<a href="/login" className="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors">Login</a>
 <a href="/contact-support" className="bg-primary text-on-primary px-6 py-2 rounded font-body-md font-bold hover:opacity-80 transition-opacity">Contact Us</a>
 </div>
 </div>
@@ -37,11 +37,11 @@ export default function Page() {
 <h1 className="font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-md leading-tight">Partner With Us to Architect Africa's Economic Future</h1>
 <p className="font-body-lg text-body-lg mb-stack-lg text-on-primary-container brightness-200">We bridge the gap between global institutional capital and high-impact regional development. Join our network of sovereign funds, enterprise leaders, and institutional investors.</p>
 <div className="flex flex-col gap-stack-md sm:flex-row sm:items-center sm:gap-stack-md">
-<button className="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:brightness-95 transition-all">Become a Partner</button>
-<button className="border border-on-primary text-on-primary px-8 py-4 rounded-lg font-bold hover:bg-on-primary hover:text-primary transition-all flex items-center">
+<a href="/inquire-partnership" className="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold hover:brightness-95 transition-all inline-flex items-center justify-center">Become a Partner</a>
+<a href="/partner-login" className="border border-on-primary text-on-primary px-8 py-4 rounded-lg font-bold hover:bg-on-primary hover:text-primary transition-all flex items-center justify-center">
                             Partner Portal
                             <span className="material-symbols-outlined ml-2">login</span>
-</button>
+</a>
 </div>
 </div>
 </div>
@@ -193,11 +193,11 @@ export default function Page() {
 <h2 className="font-display-lg text-display-lg text-on-primary mb-stack-md">Ready to Scale the Corridor?</h2>
 <p className="text-on-primary-container brightness-200 mb-stack-lg max-w-2xl mx-auto">Existing partners can access their dashboard to manage investments, view real-time logistics data, and engage with the regulatory hub.</p>
 <div className="flex flex-col md:flex-row justify-center gap-stack-md">
-<button className="bg-secondary-container text-on-secondary-container px-12 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all">Inquire About Partnership</button>
-<button className="bg-white/10 backdrop-blur-md text-on-primary border border-white/20 px-12 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center">
+<a href="/inquire-partnership" className="bg-secondary-container text-on-secondary-container px-12 py-4 rounded-lg font-bold text-lg hover:brightness-110 transition-all inline-flex items-center justify-center">Inquire About Partnership</a>
+<a href="/partner-login" className="bg-white/10 backdrop-blur-md text-on-primary border border-white/20 px-12 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center">
 <span className="material-symbols-outlined mr-2">lock</span>
                         Partner Login
-                    </button>
+                    </a>
 </div>
 </div>
 </section>
@@ -222,7 +222,7 @@ export default function Page() {
 <ul className="space-y-stack-sm">
 <li><a className="text-on-surface-variant hover:text-primary transition-colors" href="/contact-support">Contact Support</a></li>
 <li><a className="text-on-surface-variant hover:text-primary transition-colors" href="#">Newsletter</a></li>
-<li><a className="text-on-surface-variant hover:text-primary transition-colors" href="#">Partner Portal</a></li>
+<li><a className="text-on-surface-variant hover:text-primary transition-colors" href="/partner-login">Partner Portal</a></li>
 </ul>
 </div>
 <div>
